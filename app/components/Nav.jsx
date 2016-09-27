@@ -2,7 +2,7 @@ var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
 var Nav = React.createClass({
-    onSubmit: function (e) {
+    onSearch: function (e) {
         e.preventDefault();
         console.log('not yet!');
     },
