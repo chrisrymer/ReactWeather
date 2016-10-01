@@ -7,10 +7,10 @@ var Nav = React.createClass({
 
         var location = this.refs.search.value;
         var encodedLocation = encodeURIComponent(location);
-        console.log(location);
+
         if(location.length > 0) {
             this.refs.search.value = '';
-            window.location.hash = '#/?location=' + location;
+            window.location.hash = '#/?location=' + encodedLocation;
         }
 
     },
